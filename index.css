@@ -1,0 +1,182 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: slategray;
+}
+.clock{
+    position: relative;
+    color: white;
+    background-color: green;
+    width: 425px;
+    padding: 20px 45px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.time{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hours ,.dots ,.seconds, .minutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600px;
+    padding: 0 10px;
+    line-height: 125px;
+}
+.hours,.minutes{
+    font-size: 5.5em;
+    width: 125px;
+
+} */
+
+body {
+  background-color: #212121;
+  color: #fff;
+}
+.center {
+  display: flex;
+  /* height: 100vh; */
+  margin-top: 100px;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#clock {
+  font-size: 40px;
+  background-color: rgb(111, 101, 107);
+  box-shadow:1px 2px 30px rgb(232, 179, 179);
+ 
+  padding: 40px 50px;
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  /* background: linear-gradient(to right, blue,yellow,red);
+
+   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+#clock #hour {
+  padding: 20px 20px;
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+#clock #am {
+  font-size: 20px;
+
+  font-weight: bolder;
+  vertical-align: top;
+}
+#clock #min {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+#clock #sec {
+  font-size: 20px;
+  /* vertical-align: sub; */
+}
+
+#clock #dots {
+  font-size: 80px;
+  vertical-align: 7px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+.id{
+  font-size: large;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #clock {
+    font-size: 30px;
+    background-color: rgb(111, 101, 107);
+    box-shadow:1px 2px 30px rgb(232, 179, 179);
+   
+     /* padding: 40px 50px; */
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    /* background: linear-gradient(to right, blue,yellow,red);
+
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+  /* #clock #hour {
+  
+    padding-top: 0px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  
+  } */
+  #clock #hour {
+    padding-top: 0px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+    /* Apply gradient */
+   
+}
+
+  #clock #am {
+    font-size: 20px;
+  /* padding-top: 50px; */
+    font-weight: bolder;
+    
+    /* vertical-align: top; */
+  }
+  #clock #min {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+  
+  #clock #sec {
+    font-size: xx-small;
+    font-weight: bolder;
+    /* vertical-align: sub; */
+  }
+  
+  #clock #dots {
+    font-size: 50px;
+    vertical-align: 7px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 500;
+  }
+  .id{
+    font-size: smaller;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
